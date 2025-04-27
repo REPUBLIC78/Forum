@@ -21,6 +21,14 @@ def ask_model(prompt):
         print(f"Ошибка: {response.status_code}, {response.text}")
         return None
 
+def generate_task():
+    prompt = """
+    Сгенерируй математическую задачу. 
+    Она 
+    """
+
+    task = ask_model(prompt)
+
 
 if __name__ == "__main__":
     while True:
